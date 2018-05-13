@@ -1,0 +1,33 @@
+@(testForm: Form[form.TestForm.TestRow])(implicit request: RequestHeader, messages: Messages)
+@main() {
+    @helper.form(action = routes.ApplicationController.addTest()) {
+        @helper.inputText(testForm("test1")("id"))
+        @helper.inputText(testForm("test1")("field_1"))
+        @helper.inputText(testForm("test1")("field_2"))
+        @helper.inputText(testForm("test1")("field_3"))
+        @helper.inputText(testForm("test1")("field_4"))
+        @helper.inputText(testForm("test1")("field_5"))
+        @helper.inputText(testForm("test1")("field_6"))
+        @helper.inputText(testForm("test1")("field_7"))
+        @helper.inputText(testForm("test1")("field_8"))
+        @helper.inputText(testForm("test1")("field_9"))
+        @helper.inputText(testForm("test1")("field_10"))
+        @helper.inputText(testForm("test1")("field_11"))
+        @helper.inputText(testForm("test1")("field_12"))
+        @helper.inputText(testForm("test2")("field_13"))
+        @helper.inputText(testForm("test2")("field_14"))
+        @helper.inputText(testForm("test2")("field_15"))
+        @helper.inputText(testForm("test2")("field_16"))
+        @helper.inputText(testForm("test2")("field_17"))
+        @helper.inputText(testForm("test2")("field_18"))
+        @helper.inputText(testForm("test2")("field_19"))
+        @helper.inputText(testForm("test2")("field_20"))
+        @helper.inputText(testForm("test2")("field_21"))
+        @helper.inputText(testForm("test2")("field_22"))
+        @helper.inputText(testForm("test2")("field_23"))
+        @helper.inputText(testForm("test2")("field_24"))
+        @helper.inputText(testForm("test2")("field_25"))
+
+        <button type="submit" id="submit" class="btn btn-primary btn-block btn-add">Add</button>
+    }
+}
